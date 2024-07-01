@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class=" mx-4 lg:m-20">
+        <nav>
+          <div class="navbar bg-white">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a class="text-hockey-primary">Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-black text-2xl lg:text-4xl">Hockey<span class="text-hockey-primary">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-hockey-primary">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <img class="mr-2" src="Frame (1).svg" alt="">
+              <a class="btn btn-primary text-stone-50 bg-hockey-primary">Get Ticket</a>
+            </div>
+          </div>
+        </nav>
+        <div class="carousel items-center mx-auto">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" alt="" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+            <div
+              class="p-8 absolute hidden lg:block text-white bg-black w-[500px] right-20 rounded-lg mx-auto hidden lg:block bottom-6">
+              <h2 class="text-2xl font-bold mb-2">
+                Meet all the heroes from the field
+              </h2>
+              <p class="font-medium">
+                With its physical intensity and strategic gameplay, hockey
+                captivates fans around the world, creating a thrilling spectacle
+                on the rink.
+              </p>
+                        
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/2.png" class="w-full" alt="" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+            <div class="p-8 absolute text-white bg-black w-[500px] right-20 rounded-lg mx-auto hidden lg:block bottom-6">
+              <h2 class="text-2xl font-bold mb-2">
+                Meet all the heroes from the field
+              </h2>
+              <p class="font-medium">
+                With its physical intensity and strategic gameplay, hockey
+                captivates fans around the world, creating a thrilling spectacle
+                on the rink.
+              </p>
+                        
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/3.png" class="w-full" alt="" />
+            <div class="p-8 absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+            <div class="p-8 absolute text-white bg-black w-[500px] right-20 rounded-lg mx-auto hidden lg:block bottom-6">
+              <h2 class="text-2xl font-bold mb-2">
+                Meet all the heroes from the field
+              </h2>
+              <p class="font-medium">
+                With its physical intensity and strategic gameplay, hockey
+                captivates fans around the world, creating a thrilling spectacle
+                on the rink.
+              </p>
+                        
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="Images/4.png" class="w-full" alt="" />
+            <div class="p-8 absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+            <div class="p-8 absolute text-white bg-black w-[500px] right-20 rounded-lg mx-auto hidden lg:block bottom-6">
+              <h2 class="text-2xl font-bold mb-2">
+                Meet all the heroes from the field
+              </h2>
+              <p class="font-medium">
+                With its physical intensity and strategic gameplay, hockey
+                captivates fans around the world, creating a thrilling spectacle
+                on the rink.
+              </p>
+                        
+            </div>
+          </div>
+        </div>
+      </header>
+    <!-- card Making -->
+    <div class="flex flex-col lg:flex-row gap-4 m-4 p-4">
+        <div class="flex flex-col">
+            <div class="card card-side flex flex-col lg:flex-row bg-base-100 shadow-xl">
+                <div>
+                    <figure class="p-1"><img class="w-3/4 lg:w-full lx:mx-0 mb-4" src="Images/5.png" alt="Movie" /></figure>
+                </div>
+                <div class="ml-14 lg:ml-4">
+                    <div class="flex">
+                        <div class="flex mr-8">
+                            <div><img src="Frame (2).svg" alt=""></div>
+                            <div>5.0</div>
+                        </div>
+                        <div class="flex mr-8">
+                            <div><img src="Frame (3).svg" alt=""></div>
+                            <div>20</div>
+                        </div>
+                        <div class="flex">
+                            <div><img src="Frame (4).svg" alt=""></div>
+                            <div>200</div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h2 class="card-title text-2xl mb-4">World Cup Flags Football</h2>
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    </div>
+                    <div class="flex justify-between mt-4 mb-4">
+                        <div><h4 class="text-orange-600">Price - $22.00</h4></div>
+                        <div class="flex mr-4">
+                            <div><img src="Frame (5).svg" alt=""></div>
+                        <div><h6 class="text-base">Delivery Fee : Free</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="card card-side flex flex-col lg:flex-row bg-base-100 shadow-xl">
+                <figure class="p-1"><img class="w-3/4 lg:w-full lg:mx-0 mb-4" src="Images/6.png" alt="Movie" /></figure>
+                <div class="ml-14 lg:ml-4">
+                    <div class="flex mb-4">
+                        <div class="flex mr-8">
+                            <div><img src="Frame (2).svg" alt=""></div>
+                            <div>5.0</div>
+                        </div>
+                        <div class="flex mr-8">
+                            <div><img src="Frame (3).svg" alt=""></div>
+                            <div>20</div>
+                        </div>
+                        <div class="flex">
+                            <div><img src="Frame (4).svg" alt=""></div>
+                            <div>200</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="card-title text-2xl mb-4">World Cup Flags Football</h2>
+                        <p class="mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <div><h4 class="text-orange-600">Price - $22.00</h4></div>
+                        <div class="flex mr-4">
+                            <div><img src="Frame (5).svg" alt=""></div>
+                        <div><h6 class="text-base">Delivery Fee : Free</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-4 m-4 p-4">
+        <div class="flex flex-col">
+            <div class="card card-side flex flex-col lg:flex-row bg-base-100 shadow-xl">
+                <figure class="p-1"><img class="w-3/4 lg:w-full lg:mx-0 mx-auto mb-4" src="Images/7.png" alt="Movie" /></figure>
+                <div class="ml-14 lg:ml-4">
+                    <div class="flex mb-4">
+                        <div class="flex mr-8">
+                            <div><img src="Frame (2).svg" alt=""></div>
+                            <div>5.0</div>
+                        </div>
+                        <div class="flex mr-8">
+                            <div><img src="Frame (3).svg" alt=""></div>
+                            <div>20</div>
+                        </div>
+                        <div class="flex">
+                            <div><img src="Frame (4).svg" alt=""></div>
+                            <div>200</div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h2 class="card-title text-2xl mb-4">World Cup Flags Football</h2>
+                        <p class="mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <div><h4 class="text-orange-600">Price - $22.00</h4></div>
+                        <div class="flex mr-4">
+                            <div><img src="Frame (5).svg" alt=""></div>
+                        <div><h6 class="text-base">Delivery Fee : Free</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="card card-side flex flex-col lg:flex-row bg-base-100 shadow-xl">
+                <figure class="p-1"><img class="w-3/4 lg:w-full lg:mx-0 mb-4" src="Images/8.png" alt="Movie" /></figure>
+                <div class="ml-14 lg:ml-4">
+                    <div class="flex mb-4">
+                        <div class="flex mr-8">
+                            <div><img src="Frame (2).svg" alt=""></div>
+                            <div>5.0</div>
+                        </div>
+                        <div class="flex mr-8">
+                            <div><img src="Frame (3).svg" alt=""></div>
+                            <div>20</div>
+                        </div>
+                        <div class="flex">
+                            <div><img src="Frame (4).svg" alt=""></div>
+                            <div>200</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="card-title text-2xl mb-4">World Cup Flags Football</h2>
+                        <p class="mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <div><h4 class="text-orange-600">Price - $22.00</h4></div>
+                        <div class="flex mr-4">
+                            <div><img src="Frame (5).svg" alt=""></div>
+                        <div><h6 class="text-base">Delivery Fee : Free</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-4 m-4 p-4">
+        <div class="lg:flex lg:flex-col">
+            <div class="card card-side flex flex-col lg:flex-row bg-base-100 shadow-xl">
+                <figure class="p-1"><img class="w-3/4 lg:w-full lg:mx-0 mb-4" src="Images/9.png" alt="Movie" /></figure>
+                <div class="ml-14 lg:ml-4">
+                    <div class="flex mb-4">
+                        <div class="flex mr-8">
+                            <div><img src="Frame (2).svg" alt=""></div>
+                            <div>5.0</div>
+                        </div>
+                        <div class="flex mr-8">
+                            <div><img src="Frame (3).svg" alt=""></div>
+                            <div>20</div>
+                        </div>
+                        <div class="flex">
+                            <div><img src="Frame (4).svg" alt=""></div>
+                            <div>200</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="card-title text-2xl mb-4">World Cup Flags Football</h2>
+                        <p class="mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <div><h4 class="text-orange-600">Price - $22.00</h4></div>
+                        <div class="flex mr-4">
+                            <div><img src="Frame (5).svg" alt=""></div>
+                        <div><h6 class="text-base">Delivery Fee : Free</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="card card-side flex flex-col lg:flex-row bg-base-100 shadow-xl">
+                <figure class="p-1"><img class="w-3/4 lg:w-full lg:mx-0 mb-4" src="Images/10.png" alt="Movie" /></figure>
+                <div class="ml-14 lg:ml-4">
+                    <div class="flex mb-4">
+                        <div class="flex mr-8">
+                            <div><img src="Frame (2).svg" alt=""></div>
+                            <div>5.0</div>
+                        </div>
+                        <div class="flex mr-8">
+                            <div><img src="Frame (3).svg" alt=""></div>
+                            <div>20</div>
+                        </div>
+                        <div class="flex">
+                            <div><img src="Frame (4).svg" alt=""></div>
+                            <div>200</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="card-title text-2xl mb-4">World Cup Flags Football</h2>
+                        <p class="mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <div><h4 class="text-orange-600">Price - $22.00</h4></div>
+                        <div class="flex mr-4">
+                            <div><img src="Frame (5).svg" alt=""></div>
+                        <div><h6 class="text-base">Delivery Fee : Free</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mx-4 lg:mx-20">
+        <!-- Footer Section -->
+        <footer class="footer p-10 bg-gray-900 text-stone-50 mt-10">
+          <aside class="mx-auto text-center">
+            <p class="text-stone-50 text-3xl mx-auto lg:mx-0">Get In Touch</p>
+            <p class="text-stone-50 text-xs mb-2">Connect with us and let's make things happen. Get in touch <br>for
+              inquiries, collaboration, or to explore how we can assist <br>you.</p>
+            <div class="flex gap-2 mx-auto lg:mx-0">
+              <img src="Frame (1).png" alt="">
+              <h6 class="text-base">hockeys@support.com</h6>
+            </div>
+            <div class="flex gap-2 mb-2 mx-auto lg:mx-0">
+              <img src="Frame (2).png" alt="">
+              <h6 class="text-base">(+62) 123-321-543</h6>
+            </div>
+          </aside>
+          <div class="flex mx-auto gap-8">
+            <div class="flex flex-col">
+              <header class="footer-title">Company</header>
+              <a class="link link-hover mb-2">About us</a>
+              <a class="link link-hover mb-2">Leadership</a>
+              <a class="link link-hover mb-2">Carrers</a>
+              <a class="link link-hover mb-2">News & Article</a>
+              <a class="link link-hover mb-2">Legal Notice</a>
+            </div>
+            <div class="flex flex-col">
+              <header class="footer-title">Support</header>
+              <a class="link link-hover mb-2">Help Center</a>
+              <a class="link link-hover mb-2">FAQ</a>
+              <a class="link link-hover mb-2">Ticket Support</a>
+              <a class="link link-hover mb-2">Contact Us</a>
+            </div>
+          </div>
+          <nav class="mx-auto">
+            <header class="footer-title">Services</header>
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover" href="card.html">Private Lesson</a>
+            <a class="link link-hover">Hockeys for kids</a>
+            <a class="link link-hover">Hockeys for aduts</a>
+          </nav>
+        </footer>
+      </footer>
+</body>
+
+</html>
